@@ -149,7 +149,7 @@ const Stats = ({ address, myAddress, askAmount, totalFunded, interestRate, campa
                     await fundCampaignAsync({
                       functionName: "createFunding",
                       args: [BigInt(campaignIdx)],
-                      value: 1000000000n,
+                      value: parseEther(fundAmountInEth.toString()),
                       //HATA DE
                     });
                     setFunding(false);
